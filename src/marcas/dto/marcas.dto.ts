@@ -2,29 +2,27 @@ import { Optional } from "@nestjs/common";
 import { IsNotEmpty, IsNumber, IsString, MinLength } from "class-validator";
 
 
-export class CreateProductDTo {
+export class CreateMarcaDTo {
 @IsString()
 @IsNotEmpty()
 @MinLength(5)
-title: string;
-
+id: string;
 @IsNumber()
 @IsNotEmpty()
-price: number;
+name: string;
 
 @IsNumber()
 @IsNotEmpty()
 @MinLength(10)
-name: number;
+categoria: string;
 
 
 @IsNotEmpty()
 @MinLength(5)
-description: string;
+pais_origen: string;
 
 @Optional()
-stock: number;
+obsrevacion: string;
 
-@Optional()
-gender: string;
+
 }

@@ -14,8 +14,6 @@ price: number;
 @Column({type: 'text'})
 description: string;
 
-@Column({type: 'text'})
-slug: string;
 
 @Column({type: 'text'})
 stock: string;
